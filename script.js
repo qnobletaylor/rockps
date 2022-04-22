@@ -17,18 +17,23 @@ function computerPlay () {
 
 function playRound () {
     let computerSelection = computerPlay();
-    let playerSelection = prompt("Rock Paper or Scissors?").toLowerCase();
+    let playerSelection = prompt("Rock Paper or Scissors?", "").toLowerCase();
 
-    if (playerSelection == "rock" && computerSelection == "scissors") {
-        return "You Win! Rock beats Scissors.";
-    } else if (playerSelection == "paper" && computerSelection == "rock") {
-        return "You Win! Paper beats Rock.";
-    } else if (playerSelection == "scissors" && computerSelection == "paper") {
-        return "You Win! Scissors beats Paper.";
+    if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
+        if (playerSelection == computerSelection) {
+            return "You have Tied!";
+        } else if (playerSelection == "rock" && computerSelection == "scissors") {
+            return "You Win! Rock beats Scissors.";
+        } else if (playerSelection == "paper" && computerSelection == "rock") {
+            return "You Win! Paper beats Rock.";
+        } else if (playerSelection == "scissors" && computerSelection == "paper") {
+            return "You Win! Scissors beats Paper.";
+        } else {
+            return "You Lose! Computer wins again!";
+        }
     } else {
-        return "You Lose! Computer wins again!"
+        return "try again";
     }
-
 }
 
 function game() {
