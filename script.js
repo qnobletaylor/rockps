@@ -32,12 +32,14 @@ function playRound () {
             return "You Lose! Computer wins again!";
         }
     } else {
-        return alert("You did not enter 'Rock' 'Paper' or 'Scissors'")
-    }
+        console.log("try again");
+        return playRound();
+    }   
 }
 
 function game() {
     for (let i = 0; i < 5; i++) {
         console.log(playRound());
     }
+    return "Good Game"
 }
