@@ -1,0 +1,17 @@
+Rock Paper Scissors - Player vs. Computer
+
+Computer output (Computer needs to randomly choose rock, paper, or scissors)
+    create function for computerPlay
+    create variable (choice) to store computer choice
+    function randomly picks from 3 strings (rock paper or scissors)
+    choice gets stored in (choice)
+    return choice to console
+
+
+I want to count wins/losses and output the score
+    create win variable
+    create loss variable
+    create tie variable
+    count how many times win/loss/tie
+    set each variable to
+    return the values 
